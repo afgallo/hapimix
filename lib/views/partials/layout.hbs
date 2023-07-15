@@ -20,8 +20,10 @@
     {{/content}}
 
     {{#if options.developmentMode}}
+      <script src="{{baseURI}}/public/js/vendor/htmx@1.9.3/htmx.js"></script>
       <script src="{{baseURI}}/public/js/main.js"></script>
     {{else}}
+      <script src="{{baseURI}}/public/js/vendor.min.js"></script>
       <script src="{{baseURI}}/public/js/main.min.js"></script>
     {{/if}}
 

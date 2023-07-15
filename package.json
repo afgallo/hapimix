@@ -26,7 +26,8 @@
     "start": "node lib/index.js",
     "debug": "nodemon -e css,js,json,hbs --inspect server",
     "test": "lab -a @hapi/code -L",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "minify:js": "uglifyjs-folder lib/public/js/vendor -o lib/public/js/vendor.min.js"
   },
   "dependencies": {
     "@hapi/boom": "10.x.x",
@@ -52,6 +53,7 @@
     "eslint-config-standard": "17.x.x",
     "eslint-plugin-prettier": "5.x.x",
     "exiting": "6.x.x",
-    "nodemon": "3.x.x"
+    "nodemon": "3.x.x",
+    "uglifyjs-folder": "3.x.x"
   }
 }
