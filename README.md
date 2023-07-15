@@ -31,6 +31,7 @@ The HapiMix project relies on a set of core dependencies that power its function
 
 And the primary development dependencies:
 
+- `tailwindcss`: Rapidly build modern websites without ever leaving your HTML.
 - `@hapi/code`: The assertion library used alongside Lab.
 - `@hapi/glue`: For composing your hapi server and plugins.
 - `@hapi/lab`: A simple testing utility.

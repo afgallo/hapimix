@@ -1,6 +1,7 @@
 node_modules
 server/.env
-public/**/*.min*
 .parcel-cache
+lib/public/css/output.css
 *.min.js
+*.min.css
 *.build.js
