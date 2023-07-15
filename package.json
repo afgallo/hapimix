@@ -34,12 +34,15 @@
   },
   "dependencies": {
     "@hapi/boom": "10.x.x",
+    "@hapi/crumb": "9.x.x",
     "@hapi/hapi": "21.x.x",
     "@hapi/inert": "7.x.x",
+    "@hapi/scooter": "7.x.x",
     "@hapi/vision": "7.x.x",
     "@hapipal/confidence": "6.x.x",
     "@hapipal/haute-couture": "4.x.x",
     "@hapipal/toys": "4.x.x",
+    "blankie": "5.x.x",
     "handlebars": "4.x.x",
     "joi": "17.x.x"
   },
@@ -50,6 +53,9 @@
     "@hapi/lab": "25.x.x",
     "@hapipal/hpal": "3.x.x",
     "@hapipal/hpal-debug": "2.x.x",
+    "@tailwindcss/forms": "0.5.x",
+    "@tailwindcss/line-clamp": "0.4.x",
+    "@tailwindcss/typography": "0.5.x",
     "dotenv": "16.x.x",
     "eslint": "8.x.x",
     "eslint-config-prettier": "8.x.x",
@@ -58,7 +64,7 @@
     "exiting": "6.x.x",
     "nodemon": "3.x.x",
     "tailwindcss": "3.x.x",
-    "uglifyjs": "2.4.11",
+    "uglifyjs": "2.x.x",
     "uglifyjs-folder": "3.x.x"
   }
 }

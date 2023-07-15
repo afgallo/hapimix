@@ -23,6 +23,9 @@ module.exports = new Confidence.Store({
       production: {
         request: ['implementation']
       }
+    },
+    routes: {
+      security: true
     }
   },
   register: {
