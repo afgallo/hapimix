@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to HapiMix! HapiMix is an innovative, open-source project that uniquely blends the power of Hapi, a rich framework for building applications and services, and HTMX, a powerful tool that enables you to access modern browser features directly from HTML. Our goal with HapiMix is to provide a cutting-edge application boilerplate for building modern, high-performance web applications following the "HTML over the wire" approach.
+Welcome to HapiMix! HapiMix is an open-source project that uniquely blends the power of Hapi, a rich framework for building applications and services, and HTMX, a powerful tool that enables you to access modern browser features directly from HTML. Our goal with HapiMix is to provide a cutting-edge application boilerplate for building modern, high-performance web applications following the "HTML over the wire" approach.
 
 ## Objective
 

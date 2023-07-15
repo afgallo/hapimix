@@ -1,7 +1,7 @@
 {
   "name": "hapimix",
   "version": "0.0.1",
-  "description": "A hapi pal Restful Api Template for hapi.js deployments",
+  "description": "HTML over the wire with hapi and htmx",
   "author": {
     "email": "andre_gallo@hotmail.com",
     "name": "Andre Gallo"
