@@ -1,0 +1,57 @@
+{
+  "name": "hapimix",
+  "version": "0.0.1",
+  "description": "A hapi pal Restful Api Template for hapi.js deployments",
+  "author": {
+    "email": "andre_gallo@hotmail.com",
+    "name": "Andre Gallo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afgallo/hapimix.git"
+  },
+  "keywords": [
+    "hapi",
+    "htmx",
+    "hapipal",
+    "template"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node lib/index.js",
+    "debug": "nodemon -e css,js,json,hbs --inspect server",
+    "test": "lab -a @hapi/code -L",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hapi/boom": "10.x.x",
+    "@hapi/hapi": "21.x.x",
+    "@hapi/inert": "7.x.x",
+    "@hapi/vision": "7.x.x",
+    "@hapipal/confidence": "6.x.x",
+    "@hapipal/haute-couture": "4.x.x",
+    "@hapipal/toys": "4.x.x",
+    "handlebars": "4.x.x",
+    "joi": "17.x.x"
+  },
+  "devDependencies": {
+    "@hapi/code": "9.x.x",
+    "@hapi/eslint-plugin": "6.x.x",
+    "@hapi/glue": "9.x.x",
+    "@hapi/lab": "25.x.x",
+    "@hapipal/hpal": "3.x.x",
+    "@hapipal/hpal-debug": "2.x.x",
+    "dotenv": "16.x.x",
+    "eslint": "8.x.x",
+    "eslint-config-prettier": "8.x.x",
+    "eslint-config-standard": "17.x.x",
+    "eslint-plugin-prettier": "5.x.x",
+    "exiting": "6.x.x",
+    "nodemon": "3.x.x"
+  }
+}
