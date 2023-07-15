@@ -41,24 +41,49 @@ And the primary development dependencies:
 
 ## Running the Application
 
-1. **Debug Mode**: To start the application in debug mode, use the following command:
+1. **Debug Mode**: If you're in the development phase or debugging, the application should be run using:
 
    ```bash
+   npm run start:tailwind
    npm run debug
    ```
 
-   This will start the server and attach a debugger to it.
+   The `start:tailwind` command will start the application with Tailwind CSS and watch for any changes in the Tailwind CSS input file. Then, `debug` will start the server and attach a debugger to it. The debug command will also watch for changes in .js, .json, and .hbs files. Both these commands need to be run in different terminals.
 
-2. **Test**: To run the tests for the application, use the following command:
+2. **Production Mode**: Before running the application in production, ensure to minify JavaScript and CSS files:
 
    ```bash
-   npm test
+   npm run minify:js
+   npm run minify:js:vendor
+   npm run minify:css
+   ```
+
+   These will minify the main.js, all .js files in the vendor directory, and main.css respectively.
+
+   Then, set your environment to production:
+
+   ```bash
+   export NODE_ENV=production
+   ```
+
+   Now, you can run the application in production using:
+
+   ```bash
+   npm start
+   ```
+
+   This will start the server in production mode.
+
+3. **Test**: To run the tests for the application, use the following command:
+
+   ```bash
+   npm run test
    ```
 
    This will run all the tests using Lab and output the test report.
 
-3. **Production**: To start the application in production mode, use the following command:
+4. **Lint**: To lint the code for the application, use the following command:
    ```bash
-   npm start
+   npm run lint
    ```
-   This will start the server in production mode.
+   This will run ESLint to identify and report on patterns in your JavaScript code.

@@ -25,7 +25,7 @@
   "scripts": {
     "start": "node server/index.js",
     "start:tailwind": "tailwindcss -i lib/public/css/main.css -o lib/public/css/output.css --watch",
-    "debug": "nodemon -e css,js,json,hbs --inspect server",
+    "debug": "nodemon -e js,json,hbs --inspect server",
     "test": "lab -a @hapi/code -L",
     "lint": "eslint .",
     "minify:js": "uglifyjs lib/public/js/main.js -o lib/public/js/main.min.js",
