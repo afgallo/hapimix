@@ -5,3 +5,4 @@ lib/public/css/output.css
 *.min.js
 *.min.css
 *.build.js
+.DS_Store
