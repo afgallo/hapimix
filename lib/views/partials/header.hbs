@@ -1,7 +1,7 @@
 <header class="absolute inset-x-0 top-0 z-50">
   <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a href="/" hx-get="/" hx-target="#content" class="-m-1.5 p-1.5">
+      <a href="/" hx-get="/" hx-target="#content" hx-push-url="true" class="-m-1.5 p-1.5">
         <span class="sr-only">HapiMix</span>
         <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
       </a>
@@ -16,15 +16,14 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
+      <a href="/" hx-get="/" hx-target="#content" hx-push-url="true"
+        class="text-sm font-semibold leading-6 text-gray-900">Home</a>
       <a href="/demo1" hx-get="/demo1" hx-target="#content" hx-push-url="true"
-        class="text-sm font-semibold leading-6 text-gray-900">Demo
-        1</a>
+        class="text-sm font-semibold leading-6 text-gray-900">Demo 1</a>
       <a href="/demo2" hx-get="/demo2" hx-target="#content" hx-push-url="true"
         class="text-sm font-semibold leading-6 text-gray-900">Demo 2</a>
       <a href="/demo3" hx-get="/demo3" hx-target="#content" hx-push-url="true"
         class="text-sm font-semibold leading-6 text-gray-900">Demo 3</a>
-      <a href="/demo4" hx-get="/demo4" hx-target="#content" hx-push-url="true"
-        class="text-sm font-semibold leading-6 text-gray-900">Demo 4</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
     </div>

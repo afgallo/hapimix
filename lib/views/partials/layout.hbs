@@ -19,9 +19,15 @@
   <div class="bg-white">
     {{> header }}
     <div id="content">
-      {{#> content}}
-        {{!-- Content goes here. --}}
-      {{/content}}
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div class="text-center">
+            {{#> content}}
+              {{!-- Content goes here. --}}
+            {{/content}}
+          </div>
+        </div>
+      </div>
     </div>
     {{#if options.developmentMode}}
       <script src="{{baseURI}}/public/js/vendor/htmx@1.9.3/htmx.js"></script>
