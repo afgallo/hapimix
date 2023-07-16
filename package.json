@@ -2,13 +2,11 @@
   "name": "hapimix",
   "version": "0.0.1",
   "description": "HTML over the wire with hapi and htmx",
-  "author": {
-    "email": "andre_gallo@hotmail.com",
-    "name": "Andre Gallo"
-  },
+  "homepage": "https://github.com/afgallo/hapimix",
+  "author": "Andre Gallo",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/afgallo/hapimix.git"
+    "url": "https://github.com/afgallo/hapimix.git"
   },
   "keywords": [
     "hapi",
@@ -24,9 +22,9 @@
   },
   "scripts": {
     "start": "node server/index.js",
+    "start:debug": "nodemon -e js,json,hbs --inspect server",
     "start:tailwind": "tailwindcss -i lib/public/css/main.css -o lib/public/css/output.css --watch",
-    "debug": "nodemon -e js,json,hbs --inspect server",
-    "test": "lab -a @hapi/code -L",
+    "test": "lab ./test ./plugins/htmxLayoutManager/test -a @hapi/code -L -t 100 --coverage-exclude server/index.js --coverage-exclude lib/view-manager.js",
     "lint": "eslint .",
     "minify:js": "uglifyjs lib/public/js/main.js -o lib/public/js/main.min.js",
     "minify:js:vendor": "uglifyjs-folder lib/public/js/vendor -o lib/public/js/vendor.min.js",

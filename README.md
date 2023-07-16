@@ -45,7 +45,7 @@ And the primary development dependencies:
 
    ```bash
    npm run start:tailwind
-   npm run debug
+   npm run start:debug
    ```
 
    The `start:tailwind` command will start the application with Tailwind CSS and watch for any changes in the Tailwind CSS input file. Then, `debug` will start the server and attach a debugger to it. The debug command will also watch for changes in .js, .json, and .hbs files. Both these commands need to be run in different terminals.
