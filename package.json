@@ -20,6 +20,9 @@
     "lib": "lib",
     "test": "test"
   },
+  "engines": {
+    "node": ">= 18"
+  },
   "scripts": {
     "start": "node server/index.js",
     "start:debug": "nodemon -e js,json,hbs --inspect server",
