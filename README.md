@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to HapiMix! HapiMix is an open-source project that uniquely blends the power of Hapi, a rich framework for building applications and services, and HTMX, a powerful tool that enables you to access modern browser features directly from HTML. Our goal with HapiMix is to provide a cutting-edge application boilerplate for building modern, high-performance web applications following the "HTML over the wire" approach.
+Welcome to HapiMix! HapiMix is an open-source project that uniquely blends the power of hapi, a rich framework for building applications and services, and htmx, a powerful tool that enables you to access modern browser features directly from HTML. Our goal with HapiMix is to provide a cutting-edge application boilerplate for building modern, high-performance web applications following the "HTML over the wire" approach.
 
 ## Objective
 
@@ -10,7 +10,7 @@ The objective of HapiMix is twofold:
 
 1. **Leverage the Power of Hapi:** Hapi is a robust, modular, and highly configurable framework that allows developers to build versatile web applications and services. It provides a rich set of features like input validation, configuration-based functionality, error handling, logging, and more. By using Hapi as a base, we aim to make the development process smooth and efficient.
 
-2. **Utilize HTMX for Dynamic UIs:** HTMX allows you to access AJAX, CSS Transitions, WebSockets, and Server-Sent Events directly from HTML, simplifying the way you create dynamic user interfaces. With HapiMix, we harness the power of HTMX to bring the user interface to life, making web pages more interactive and responsive.
+2. **Utilize htmx for Dynamic UIs:** htmx allows you to access AJAX, CSS Transitions, WebSockets, and Server-Sent Events directly from HTML, simplifying the way you create dynamic user interfaces. With HapiMix, we harness the power of htmx to bring the user interface to life, making web pages more interactive and responsive.
 
 The result is a robust application boilerplate that gives developers a powerful toolkit for creating modern web applications without the need for client-side JavaScript frameworks. With HapiMix, developers can stay productive and focused on delivering high-quality, performant applications while enjoying the flexibility and simplicity of server-side rendering and "HTML over the wire".
 
