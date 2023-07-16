@@ -21,7 +21,7 @@
     "test": "test"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 17.x"
   },
   "scripts": {
     "start": "node server/index.js",
