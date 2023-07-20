@@ -28,7 +28,7 @@ The HapiMix project relies on a set of core dependencies that power its function
 - `@hapipal/confidence`: A configuration document format for hapi.
 - `@hapipal/haute-couture`: For automatic file-based hapi plugin composition.
 - `@hapipal/toys`: Hapi.js helpers for enhancing productivity.
-- `handlebars`: A popular semantic templating engine.
+- `ejs`: Embedded JavaScript templating.
 - `joi`: A powerful schema description language and data validator for JavaScript.
 
 And the primary development dependencies:
@@ -50,7 +50,7 @@ And the primary development dependencies:
    npm run start:debug
    ```
 
-   The `start:tailwind` command will start the application with Tailwind CSS and watch for any changes in the Tailwind CSS input file. Then, `debug` will start the server and attach a debugger to it. The debug command will also watch for changes in .js, .json, and .hbs files. Both these commands need to be run in different terminals.
+   The `start:tailwind` command will start the application with Tailwind CSS and watch for any changes in the Tailwind CSS input file. Then, `debug` will start the server and attach a debugger to it. The debug command will also watch for changes in .js, .json, and .ejs files. Both these commands need to be run in different terminals.
 
 2. **Production Mode**: Before running the application in production, ensure to minify JavaScript and CSS files:
 

@@ -21,11 +21,11 @@
     "test": "test"
   },
   "engines": {
-    "node": ">= 17.x"
+    "node": ">= 18.x"
   },
   "scripts": {
     "start": "node server/index.js",
-    "start:debug": "nodemon -e js,json,hbs --inspect server",
+    "start:debug": "nodemon -e js,json,ejs --inspect server",
     "start:tailwind": "tailwindcss -i lib/public/css/main.css -o lib/public/css/output.css --watch",
     "test": "lab ./test ./plugins/htmxLayoutManager/test -a @hapi/code -L -t 100 --coverage-exclude server/index.js --coverage-exclude lib/view-manager.js",
     "lint": "eslint .",
@@ -44,7 +44,7 @@
     "@hapipal/haute-couture": "4.x.x",
     "@hapipal/toys": "4.x.x",
     "blankie": "5.x.x",
-    "handlebars": "4.x.x",
+    "ejs": "3.x.x",
     "joi": "17.x.x"
   },
   "devDependencies": {

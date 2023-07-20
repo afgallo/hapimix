@@ -12,7 +12,7 @@ const HtmxLayoutManager = {
 
       const actualLayoutName = headers['hx-request'] === 'true' ? `${layoutName}Partial` : layoutName
 
-      return this.view(viewName, { ...context, partialName: actualLayoutName }, viewOptions)
+      return this.view(viewName, { ...context }, { layout: actualLayoutName, ...viewOptions })
     }
 
     server.decorate('toolkit', 'viewWithLayout', viewWithLayout)

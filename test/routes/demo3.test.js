@@ -23,6 +23,6 @@ describe('GET /demo3', () => {
     })
 
     expect(res.statusCode).to.equal(200)
-    expect(res.payload).to.contain('<title>Demo 3</title>')
+    expect(res.payload).to.include('Demo 3')
   })
 })

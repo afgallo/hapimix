@@ -23,10 +23,11 @@ describe('htmxLayoutManager', () => {
     await server.register(Vision)
 
     server.views({
-      engines: { hbs: require('handlebars') },
-      defaultExtension: 'hbs',
+      engines: { ejs: require('ejs') },
+      defaultExtension: 'ejs',
       path: Path.resolve(__dirname, 'views'),
-      partialsPath: Path.resolve(__dirname, 'views/partials')
+      layout: true,
+      layoutPath: Path.resolve(__dirname, 'views/layouts')
     })
 
     await server.register(HtmxLayoutManager)
@@ -40,9 +41,9 @@ describe('htmxLayoutManager', () => {
     })
 
     const resWithoutHx = await server.inject({ method: 'GET', url: '/' })
-    expect(resWithoutHx.result).to.include('layout')
+    expect(resWithoutHx.result).to.include('<body>')
 
     const resWithHx = await server.inject({ method: 'GET', url: '/', headers: { 'hx-request': 'true' } })
-    expect(resWithHx.result).to.include('layoutPartial')
+    expect(resWithHx.result).to.not.include('<body>')
   })
 })
