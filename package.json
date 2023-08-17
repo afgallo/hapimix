@@ -24,14 +24,15 @@
     "node": ">= 18.x"
   },
   "scripts": {
-    "start": "node server/index.js",
+    "start": "NODE_ENV=production node server/index.js",
     "start:debug": "nodemon -e js,json,ejs --inspect server",
     "start:tailwind": "tailwindcss -i lib/public/css/main.css -o lib/public/css/output.css --watch",
     "test": "lab ./test ./plugins/htmxLayoutManager/test -a @hapi/code -L -t 100 --coverage-exclude server/index.js --coverage-exclude lib/view-manager.js",
     "lint": "eslint .",
     "minify:js": "uglifyjs lib/public/js/main.js -o lib/public/js/main.min.js",
     "minify:js:vendor": "uglifyjs-folder lib/public/js/vendor -o lib/public/js/vendor.min.js",
-    "minify:css": "tailwindcss -i lib/public/css/main.css -o lib/public/css/main.min.css --minify"
+    "minify:css": "tailwindcss -i lib/public/css/main.css -o lib/public/css/main.min.css --minify",
+    "build:front-end": "npm run minify:js && npm run minify:js:vendor && npm run minify:css"
   },
   "dependencies": {
     "@hapi/boom": "10.x.x",
@@ -59,7 +60,7 @@
     "@tailwindcss/typography": "0.5.x",
     "dotenv": "16.x.x",
     "eslint": "8.x.x",
-    "eslint-config-prettier": "8.x.x",
+    "eslint-config-prettier": "9.x.x",
     "eslint-config-standard": "17.x.x",
     "eslint-plugin-prettier": "5.x.x",
     "exiting": "6.x.x",
